@@ -17,5 +17,5 @@ A detailed list of my technical skills and tools I use proficiently.
 ## Contact
 Feel free to connect with me or send an email:
 
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/alex-shi-781832213/)
-- **Email**: [ahs285@cornell.edu
+- **LinkedIn**: [https://www.linkedin.com/in/alex-shi-781832213/]
+- **Email**: [ahs285@cornell.edu]

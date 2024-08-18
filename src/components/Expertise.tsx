@@ -6,17 +6,17 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
+    "Docker",
+    "GUnicorn",
+    "nginx",
     "HTML5",
     "CSS3",
-    "SASS",
+    "AWS ECR",
     "Flask",
     "Python",
     "SQL",
     "PostgreSQL",
-    "Postman"
+    "MongoDB"
 ];
 
 const labelsSecond = [
@@ -26,19 +26,13 @@ const labelsSecond = [
     "AWS",
     "Azure",
     "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+ 
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Microsoft EntraID",
+    "Vault",
+    "AWS Cloud Dev",
 ];
 
 function Expertise() {
@@ -50,7 +44,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <p>I have built a diverse array of web applications from scratch using modern technologies such as GUnicorn and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -73,8 +67,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <h3>Authentication & Security</h3>
+                    <p>I've worked in professional settings dealing with protected health information. As a result, I've had experience creating secure web apps with vault leases and Microsoft SAML authentication.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (

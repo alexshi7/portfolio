@@ -1,6 +1,6 @@
 # Alex Shi's Portfolio
 
-Hi, welcome to Alex's Portfolio!
+Hi, welcome to ![Alex's Portfolio](https://alexshi7.github.io/portfolio/)
 
 ## Table of Contents
 - [Introduction](#introduction)

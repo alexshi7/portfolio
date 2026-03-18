@@ -32,15 +32,22 @@ const stack = [
 const projects = [
   {
     name: 'Razzle Dazzle',
-    link: 'https://github.com/alexshi7/RazzleDazzle',
+    liveLink: 'https://github.com/alexshi7/RazzleDazzle',
     summary: 'A memory-to-sketch app that turns a personal experience into multiple animated p5.js concepts, then lets the user refine a chosen sketch through feedback.',
     details: 'React, Vite, Node, p5.js, OpenAI API',
   },
   {
     name: 'ColorSwatch Analysis',
-    link: 'https://alexshi7.github.io/colorswatch/',
+    liveLink: 'https://alexshi7.github.io/colorswatch/',
     summary: 'Image color analysis tool with dominant color extraction, previews, and hex output.',
     details: 'JavaScript, Vibrant.js, HTML/CSS',
+  },
+  {
+    name: 'Media Portfolio',
+    liveLink: 'https://alexshi7.github.io/mediaportfolio/',
+    repoLink: 'https://github.com/alexshi7/mediaportfolio',
+    summary: 'A media-focused portfolio site that presents creative work in a clean, browseable format with a polished front-end experience.',
+    details: 'React, TypeScript, GitHub Pages',
   },
 ];
 
@@ -173,7 +180,15 @@ function App() {
                   <article className="entry" key={project.name}>
                     <div className="entry-top">
                       <h2>{project.name}</h2>
-                      <a href={project.link} target="_blank" rel="noreferrer">View</a>
+                      <div>
+                        <a href={project.liveLink} target="_blank" rel="noreferrer">Live</a>
+                        {project.repoLink ? (
+                          <>
+                            {' · '}
+                            <a href={project.repoLink} target="_blank" rel="noreferrer">Repo</a>
+                          </>
+                        ) : null}
+                      </div>
                     </div>
                     <p>{project.summary}</p>
                     <p className="entry-meta">{project.details}</p>

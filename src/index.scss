@@ -226,6 +226,20 @@ h3 {
   font-size: 0.95rem;
 }
 
+.coursework-block {
+  margin-top: 1rem;
+}
+
+.coursework-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  color: #444;
+}
+
+.coursework-list li {
+  margin-bottom: 0.35rem;
+}
+
 @media (max-width: 720px) {
   .site-header {
     padding: 1.25rem;

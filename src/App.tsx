@@ -59,6 +59,23 @@ const experiences = [
   },
 ];
 
+const education = {
+  school: 'Cornell University',
+  period: '2023 - Current',
+  major: 'Computer Science',
+  minor: 'AI, Business',
+  coursework: [
+    'CS 2110 - Object-Oriented Programming and Data Structures',
+    'CS 2800 - Discrete Structures',
+    'CS 3110 - Data Structures and Functional Programming',
+    'CS 3410 - Computer System Organization and Programming',
+    'CS 4410 - Operating Systems',
+    'CS 4820 - Introduction to Analysis of Algorithms',
+    'BTRY 3080 - Probability and Statistics',
+    'MATH 2940 - Linear Algebra',
+  ],
+};
+
 function getPageFromHash(hash: string): Page {
   if (hash === '#projects') {
     return 'projects';
@@ -168,8 +185,31 @@ function App() {
         ) : (
           <section className="resume-page">
             <section className="content-block">
-              <p className="eyebrow">Experience</p>
+              <p className="eyebrow">Education</p>
               <h1>Resume</h1>
+              <div className="entry-list">
+                <article className="entry">
+                  <div className="entry-top">
+                    <h2>{education.school}</h2>
+                    <span>{education.period}</span>
+                  </div>
+                  <p className="entry-org">Major: {education.major}</p>
+                  <p className="entry-org">Minor: {education.minor}</p>
+                  <div className="coursework-block">
+                    <p className="entry-org">Relevant Coursework</p>
+                    <ul className="coursework-list">
+                      {education.coursework.map((course) => (
+                        <li key={course}>{course}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section className="content-block">
+              <p className="eyebrow">Experience</p>
+              <h2>Professional experience</h2>
               <p className="section-copy">
                 Internships and team roles aligned to my resume, covering enterprise .NET work, backend infrastructure, and product-facing engineering.
               </p>

@@ -46,7 +46,7 @@ const projects = [
 
 const experiences = [
   {
-    period: 'May 2025 - Present',
+    period: 'May 2025 - January 2025',
     title: 'Software Engineer Intern',
     org: 'Johns Hopkins University Applied Physics Laboratory',
     summary: 'Built and deployed enterprise internal applications in C# and .NET, integrating company-wide APIs and Denodo workflows on secure Windows infrastructure using GitLab, ODBC, NuGet, Docker, and Rancher. Also contributed to an internal LLM platform by engineering ingestion and training workflows for private model deployment.',

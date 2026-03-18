@@ -4,5 +4,5 @@ import App from './App';
 
 test('renders about content', () => {
   render(<App />);
-  expect(screen.getByText(/hi im alex shi/i)).toBeInTheDocument();
+  expect(screen.getByText(/Alex Shi 史润康/i)).toBeInTheDocument();
 });

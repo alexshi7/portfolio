@@ -190,7 +190,7 @@ function App() {
         )}
       </main>
       <footer className="site-footer">
-        <a href="mailto:ahs285@cornell.edu">Email</a>
+        <a href="mailto:ahs285@cornell.edu">ahs285@cornell.edu</a>
         <a href="https://github.com/alexshi7" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/alex-shi7/" target="_blank" rel="noreferrer">LinkedIn</a>
       </footer>
